@@ -4,6 +4,7 @@
   "description": "Retrieves ipl statistics",
   "main": "IPLREAD.js",
   "scripts": {
+    "start": "node IPLREAD.js",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
