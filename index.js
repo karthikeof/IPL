@@ -5,10 +5,10 @@
 
 
     var MongoClient = require('mongodb').MongoClient;
-    app.get('/', async (app, passport,req, res, next) => {
+    app.get('/', async (req, res, next) => {
       res.send('Hello');
     });
-    app.get('/listMatches/:teamid', async (app, passport,req, res, next) => {
+    app.get('/listMatches/:teamid', async (req, res, next) => {
 console.log(req.params.teamid);
 dotenv.config();
 try {
