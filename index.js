@@ -2,8 +2,6 @@
     var express = require('express');
     var app = express();
     var dotenv = require('dotenv');
-
-
     var MongoClient = require('mongodb').MongoClient;
     app.get('/', async (req, res, next) => {
       res.send('Hello');
@@ -14,7 +12,7 @@ dotenv.config();
 try {
                 MongoClient.connect(process.env.MONGOLAB_URI,  function(err, client) {
                   // assert.equal(null, err);
-                 //  const db = client.db('IPL');
+                  const db = client.db('IPL');
                 //Step 1: declare promise
                 var myPromise = () => {
                   return new Promise((resolve, reject) => {
