@@ -16,6 +16,9 @@
   ],
   "author": "karthik",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "bugs": {
     "url": "https://github.com/karthikeof/IPL/issues"
   },
