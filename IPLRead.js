@@ -5,6 +5,9 @@
 
 
     var MongoClient = require('mongodb').MongoClient;
+    app.get('/', async (req, res, next) => {
+      res.send('Hello');
+    });
     app.get('/listMatches/:teamid', async (req, res, next) => {
 console.log(req.params.teamid);
 dotenv.config();
@@ -58,7 +61,7 @@ dotenv.config();
 
           })
 
-         var server = app.listen(8081, function () {
+         var server = app.listen(process.env.PORT || 3000, function () {
             var host = server.address().address
             var port = server.address().port
             console.log("IPL Application listening ...", host, port)
