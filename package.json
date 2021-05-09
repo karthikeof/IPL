@@ -18,7 +18,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+     "mongodb": "2.0.14"
+    , "mongodb-core": "~1.0"
+
 
   },
   "bugs": {
