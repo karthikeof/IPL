@@ -2,9 +2,9 @@
   "name": "iplapi",
   "version": "1.0.0",
   "description": "Retrieves ipl statistics",
-  "main": "IPLRead.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node IPLRead.js",
+    "start": "node index.js",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
