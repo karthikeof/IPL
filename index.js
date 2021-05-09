@@ -5,15 +5,13 @@
 
 
     var MongoClient = require('mongodb').MongoClient;
-    app.get('/', async (req, res, next) => {
+    router.get('/', async (app, passport,req, res, next) => {
       res.send('Hello');
     });
-    app.get('/listMatches/:teamid', async (req, res, next) => {
+    router.get('/listMatches/:teamid', async (app, passport,req, res, next) => {
 console.log(req.params.teamid);
 dotenv.config();
-
-
-            try {
+try {
                 MongoClient.connect(process.env.MONGOLAB_URI,  function(err, client) {
                   // assert.equal(null, err);
                    const db = client.db('IPL');
