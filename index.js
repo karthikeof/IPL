@@ -11,6 +11,9 @@ console.log(req.params.teamid);
 dotenv.config();
 try {
                 MongoClient.connect(process.env.MONGOLAB_URI,  function(err, client) {
+                  if (err) {
+                    console.error('An error occurred connecting to MongoDB: ', err);
+                } 
                   // assert.equal(null, err);
                   const db = client.db('IPL');
                 //Step 1: declare promise
